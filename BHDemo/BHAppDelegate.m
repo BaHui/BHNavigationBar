@@ -7,6 +7,7 @@
 //
 
 #import "BHAppDelegate.h"
+#import "BHNavigationController.h"
 #import "BHFirstViewController.h"
 
 @interface BHAppDelegate ()
@@ -27,7 +28,7 @@
 
 - (UINavigationController *)wrapperRootNavigationController {
 	BHFirstViewController *firstViewController = [BHFirstViewController create];
-	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstViewController];
+	BHNavigationController *navigationController = [[BHNavigationController alloc] initWithRootViewController:firstViewController];
 	navigationController.navigationBarHidden = NO;
 	
 	return navigationController;

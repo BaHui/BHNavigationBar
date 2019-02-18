@@ -23,6 +23,9 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	
+	UINavigationBar *navigaitonBar = self.navigationController.navigationBar;
+	[navigaitonBar setBackgroundImage:[UIImage imageNamed:@"bh_navigation_bg"] forBarMetrics:UIBarMetricsDefault];
 }
 
 @end

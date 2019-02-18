@@ -11,6 +11,7 @@
 		24FD51B8221807B900576858 /* BHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51B7221807B900576858 /* BHSecondViewController.m */; };
 		24FD51BB221807CA00576858 /* BHThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51BA221807CA00576858 /* BHThirdViewController.m */; };
 		24FD51BE221807DB00576858 /* BHForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51BD221807DB00576858 /* BHForthViewController.m */; };
+		24FD51C9221816C200576858 /* BHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51C8221816C200576858 /* BHNavigationController.m */; };
 		6FE8F9B52150E8D400107C93 /* BHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8F9B42150E8D400107C93 /* BHAppDelegate.m */; };
 		6FE8F9BD2150E8D500107C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE8F9BC2150E8D500107C93 /* Assets.xcassets */; };
 		6FE8F9C32150E8D500107C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8F9C22150E8D500107C93 /* main.m */; };
@@ -27,6 +28,8 @@
 		24FD51BA221807CA00576858 /* BHThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BHThirdViewController.m; path = Classes/BHThirdViewController.m; sourceTree = "<group>"; };
 		24FD51BC221807DB00576858 /* BHForthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BHForthViewController.h; path = Classes/BHForthViewController.h; sourceTree = "<group>"; };
 		24FD51BD221807DB00576858 /* BHForthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BHForthViewController.m; path = Classes/BHForthViewController.m; sourceTree = "<group>"; };
+		24FD51C7221816C200576858 /* BHNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BHNavigationController.h; path = Navigation/BHNavigationController.h; sourceTree = "<group>"; };
+		24FD51C8221816C200576858 /* BHNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BHNavigationController.m; path = Navigation/BHNavigationController.m; sourceTree = "<group>"; };
 		6FE8F9B02150E8D400107C93 /* BHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE8F9B32150E8D400107C93 /* BHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHAppDelegate.h; sourceTree = "<group>"; };
 		6FE8F9B42150E8D400107C93 /* BHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHAppDelegate.m; sourceTree = "<group>"; };
@@ -88,8 +91,26 @@
 		24FD51C322180E8700576858 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				24FD51C7221816C200576858 /* BHNavigationController.h */,
+				24FD51C8221816C200576858 /* BHNavigationController.m */,
+				24FD51CA221817BF00576858 /* Navigation Bars */,
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		24FD51CA221817BF00576858 /* Navigation Bars */ = {
+			isa = PBXGroup;
+			children = (
+				24FD51CE221A4BB400576858 /* Default Type */,
+			);
+			name = "Navigation Bars";
+			sourceTree = "<group>";
+		};
+		24FD51CE221A4BB400576858 /* Default Type */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Default Type";
 			sourceTree = "<group>";
 		};
 		6FE8F9A72150E8D300107C93 = {
@@ -124,10 +145,10 @@
 		6FE8F9C92150EAE700107C93 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6FE8F9BC2150E8D500107C93 /* Assets.xcassets */,
 				6FE8F9D42150EC8200107C93 /* README.md */,
 				6FE8F9C12150E8D500107C93 /* Info.plist */,
 				6FE8F9C22150E8D500107C93 /* main.m */,
-				6FE8F9BC2150E8D500107C93 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -223,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24FD51B8221807B900576858 /* BHSecondViewController.m in Sources */,
+				24FD51C9221816C200576858 /* BHNavigationController.m in Sources */,
 				24FD51BB221807CA00576858 /* BHThirdViewController.m in Sources */,
 				24FD51B5221807A700576858 /* BHFirstViewController.m in Sources */,
 				6FE8F9C32150E8D500107C93 /* main.m in Sources */,
