@@ -7,6 +7,8 @@
 //
 
 #import "BHFirstViewController.h"
+#import "BHSecondViewController.h"
+#import "UIViewController+BHNavigation.h"
 
 @interface BHFirstViewController ()
 
@@ -24,8 +26,12 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	UINavigationBar *navigaitonBar = self.navigationController.navigationBar;
-	[navigaitonBar setBackgroundImage:[UIImage imageNamed:@"bh_navigation_bg"] forBarMetrics:UIBarMetricsDefault];
+	[self configureTitle:@"First View Controller"];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+	BHSecondViewController *secondViewController = [BHSecondViewController create];
+	[self.navigationController pushViewController:secondViewController animated:YES];
 }
 
 @end
