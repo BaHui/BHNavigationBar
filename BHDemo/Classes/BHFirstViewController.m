@@ -10,7 +10,7 @@
 #import "BHSecondViewController.h"
 #import "UIViewController+BHNavigation.h"
 
-@interface BHFirstViewController ()
+@interface BHFirstViewController () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -25,13 +25,22 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	[self popGestureRecognizerEnable];
 	
-	[self configureTitle:@"First View Controller"];
+	[self configureNavTitle:@"First View Controller" color:[UIColor brownColor]];
+	[self configureNavBackgroundColor:[UIColor blackColor]];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 	BHSecondViewController *secondViewController = [BHSecondViewController create];
 	[self.navigationController pushViewController:secondViewController animated:YES];
+}
+
+#pragma mark - Private Methods
+
+- (void)popGestureRecognizerEnable {
+	self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+	self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
 @end

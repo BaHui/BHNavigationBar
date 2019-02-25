@@ -7,6 +7,7 @@
 //
 
 #import "BHSecondViewController.h"
+#import "UIViewController+BHNavigation.h"
 
 @interface BHSecondViewController ()
 
@@ -23,6 +24,11 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	[self configureNavBackgroundImage:[UIImage imageNamed:@"bh_navigation_bg"]];
+	
+	[self configureNavLeftItemTitle:@"Back" handler:^{
+		[self.navigationController popViewControllerAnimated:YES];
+	}];
 }
 
 @end

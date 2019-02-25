@@ -8,21 +8,20 @@
 
 #import "UIViewController+BHNavigation.h"
 
-#define BH_NAV_DEFAULT_COLOR [UIColor redColor]
+#define BH_NAV_DEFAULT_COLOR [UIColor blackColor]
 #define BH_NAV_DEFAULT_FONT_SIZE 18.f
-
 
 @implementation UIViewController (BHNavigation)
 
-- (void)configureTitle:(NSString *)title {
-	[self configureTitle:title color:BH_NAV_DEFAULT_COLOR fontSize:BH_NAV_DEFAULT_FONT_SIZE];
+- (void)configureNavTitle:(NSString *)title {
+	[self configureNavTitle:title color:BH_NAV_DEFAULT_COLOR fontSize:BH_NAV_DEFAULT_FONT_SIZE];
 }
 
-- (void)configureTitle:(NSString *)title color:(UIColor *)color {
-	[self configureTitle:title color:color fontSize:BH_NAV_DEFAULT_FONT_SIZE];
+- (void)configureNavTitle:(NSString *)title color:(UIColor *)color {
+	[self configureNavTitle:title color:color fontSize:BH_NAV_DEFAULT_FONT_SIZE];
 }
 
-- (void)configureTitle:(NSString *)title color:(UIColor *)color fontSize:(CGFloat)fontSize {
+- (void)configureNavTitle:(NSString *)title color:(UIColor *)color fontSize:(CGFloat)fontSize {
 	[self.navigationItem setTitle:title];
 	
 	NSDictionary *attributes = @{NSForegroundColorAttributeName : color,
@@ -30,6 +29,36 @@
 	[self.navigationController.navigationBar setTitleTextAttributes:attributes];
 }
 
+#pragma mark - Navigation Background
+
+- (void)configureNavBackgroundColor:(UIColor *)color {
+	self.navigationController.navigationBar.barTintColor = color;
+}
+
+- (void)configureNavBackgroundImage:(UIImage *)image {
+	[self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+}
+
+#pragma mark - Navigation Item
+
+- (void)configureNavLeftItemTitle:(NSString *)title handler:(void(^)(void))handler {
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(leftHandler:)];
+	self.navigationItem.leftBarButtonItem = item;
+}
+
+- (void)configureNavRightItemTitle:(NSString *)title handler:(void(^)(void))handler {
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(rightHandler:)];
+	self.navigationItem.rightBarButtonItem = item;
+}
+
 #pragma mark - Private Methods
+
+- (void)leftHandler:(void(^)(void))handler {
+	handler();//https://www.jianshu.com/p/ba032dabcf4d
+}
+
+- (void)rightHandler:(void(^)(void))handler {
+	handler();
+}
 
 @end
