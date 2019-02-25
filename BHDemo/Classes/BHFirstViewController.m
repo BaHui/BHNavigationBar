@@ -28,7 +28,7 @@
 	[self popGestureRecognizerEnable];
 	
 	[self configureNavTitle:@"First View Controller" color:[UIColor brownColor]];
-	[self configureNavBackgroundColor:[UIColor blackColor]];
+	//[self configureNavBackgroundColor:[UIColor blackColor]];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

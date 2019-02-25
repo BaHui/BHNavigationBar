@@ -28,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)configureNavLeftItemTitle:(NSString *)title handler:(void(^)(void))handler;
 - (void)configureNavRightItemTitle:(NSString *)title handler:(void(^)(void))handler;
 
+- (void)configureNavLeftItemImage:(UIImage *)image handler:(void(^)(void))handler;
+- (void)configureNavRightItemImage:(UIImage *)image handler:(void(^)(void))handler;
+
 @end
 
 NS_ASSUME_NONNULL_END

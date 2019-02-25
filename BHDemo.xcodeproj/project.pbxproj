@@ -11,10 +11,8 @@
 		24FD51B8221807B900576858 /* BHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51B7221807B900576858 /* BHSecondViewController.m */; };
 		24FD51BB221807CA00576858 /* BHThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51BA221807CA00576858 /* BHThirdViewController.m */; };
 		24FD51BE221807DB00576858 /* BHForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51BD221807DB00576858 /* BHForthViewController.m */; };
-		24FD51D6221BA9B400576858 /* UINavigationController+BHUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51D4221BA9B300576858 /* UINavigationController+BHUtility.m */; };
-		24FD51D9221BA9CB00576858 /* UINavigationBar+BHUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51D8221BA9CA00576858 /* UINavigationBar+BHUtility.m */; };
-		24FD51DC221BAC6C00576858 /* UINavigationItem+BHUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51DB221BAC6C00576858 /* UINavigationItem+BHUtility.m */; };
 		24FD51DF221BCFD800576858 /* UIViewController+BHNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD51DE221BCFD800576858 /* UIViewController+BHNavigation.m */; };
+		6FD085F02224485F006600AB /* UIBarButtonItem+BHBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD085EF2224485F006600AB /* UIBarButtonItem+BHBlock.m */; };
 		6FE8F9B52150E8D400107C93 /* BHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8F9B42150E8D400107C93 /* BHAppDelegate.m */; };
 		6FE8F9BD2150E8D500107C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE8F9BC2150E8D500107C93 /* Assets.xcassets */; };
 		6FE8F9C32150E8D500107C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8F9C22150E8D500107C93 /* main.m */; };
@@ -31,14 +29,10 @@
 		24FD51BA221807CA00576858 /* BHThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BHThirdViewController.m; path = Classes/BHThirdViewController.m; sourceTree = "<group>"; };
 		24FD51BC221807DB00576858 /* BHForthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BHForthViewController.h; path = Classes/BHForthViewController.h; sourceTree = "<group>"; };
 		24FD51BD221807DB00576858 /* BHForthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BHForthViewController.m; path = Classes/BHForthViewController.m; sourceTree = "<group>"; };
-		24FD51D4221BA9B300576858 /* UINavigationController+BHUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+BHUtility.m"; path = "Navigation/UINavigationController+BHUtility.m"; sourceTree = "<group>"; };
-		24FD51D5221BA9B300576858 /* UINavigationController+BHUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+BHUtility.h"; path = "Navigation/UINavigationController+BHUtility.h"; sourceTree = "<group>"; };
-		24FD51D7221BA9CA00576858 /* UINavigationBar+BHUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+BHUtility.h"; path = "Navigation/UINavigationBar+BHUtility.h"; sourceTree = "<group>"; };
-		24FD51D8221BA9CA00576858 /* UINavigationBar+BHUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+BHUtility.m"; path = "Navigation/UINavigationBar+BHUtility.m"; sourceTree = "<group>"; };
-		24FD51DA221BAC6C00576858 /* UINavigationItem+BHUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+BHUtility.h"; path = "Navigation/UINavigationItem+BHUtility.h"; sourceTree = "<group>"; };
-		24FD51DB221BAC6C00576858 /* UINavigationItem+BHUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+BHUtility.m"; path = "Navigation/UINavigationItem+BHUtility.m"; sourceTree = "<group>"; };
 		24FD51DD221BCFD800576858 /* UIViewController+BHNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BHNavigation.h"; path = "Navigation/UIViewController+BHNavigation.h"; sourceTree = "<group>"; };
 		24FD51DE221BCFD800576858 /* UIViewController+BHNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BHNavigation.m"; path = "Navigation/UIViewController+BHNavigation.m"; sourceTree = "<group>"; };
+		6FD085EE2224485F006600AB /* UIBarButtonItem+BHBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+BHBlock.h"; path = "Navigation/UIBarButtonItem+BHBlock.h"; sourceTree = "<group>"; };
+		6FD085EF2224485F006600AB /* UIBarButtonItem+BHBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+BHBlock.m"; path = "Navigation/UIBarButtonItem+BHBlock.m"; sourceTree = "<group>"; };
 		6FE8F9B02150E8D400107C93 /* BHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE8F9B32150E8D400107C93 /* BHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHAppDelegate.h; sourceTree = "<group>"; };
 		6FE8F9B42150E8D400107C93 /* BHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHAppDelegate.m; sourceTree = "<group>"; };
@@ -102,14 +96,18 @@
 			children = (
 				24FD51DD221BCFD800576858 /* UIViewController+BHNavigation.h */,
 				24FD51DE221BCFD800576858 /* UIViewController+BHNavigation.m */,
-				24FD51D5221BA9B300576858 /* UINavigationController+BHUtility.h */,
-				24FD51D4221BA9B300576858 /* UINavigationController+BHUtility.m */,
-				24FD51D7221BA9CA00576858 /* UINavigationBar+BHUtility.h */,
-				24FD51D8221BA9CA00576858 /* UINavigationBar+BHUtility.m */,
-				24FD51DA221BAC6C00576858 /* UINavigationItem+BHUtility.h */,
-				24FD51DB221BAC6C00576858 /* UINavigationItem+BHUtility.m */,
+				6FD085F12224487A006600AB /* Utility */,
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		6FD085F12224487A006600AB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6FD085EE2224485F006600AB /* UIBarButtonItem+BHBlock.h */,
+				6FD085EF2224485F006600AB /* UIBarButtonItem+BHBlock.m */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		6FE8F9A72150E8D300107C93 = {
@@ -243,12 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24FD51DF221BCFD800576858 /* UIViewController+BHNavigation.m in Sources */,
-				24FD51DC221BAC6C00576858 /* UINavigationItem+BHUtility.m in Sources */,
 				24FD51B8221807B900576858 /* BHSecondViewController.m in Sources */,
 				24FD51BB221807CA00576858 /* BHThirdViewController.m in Sources */,
-				24FD51D9221BA9CB00576858 /* UINavigationBar+BHUtility.m in Sources */,
 				24FD51B5221807A700576858 /* BHFirstViewController.m in Sources */,
-				24FD51D6221BA9B400576858 /* UINavigationController+BHUtility.m in Sources */,
+				6FD085F02224485F006600AB /* UIBarButtonItem+BHBlock.m in Sources */,
 				6FE8F9C32150E8D500107C93 /* main.m in Sources */,
 				24FD51BE221807DB00576858 /* BHForthViewController.m in Sources */,
 				6FE8F9B52150E8D400107C93 /* BHAppDelegate.m in Sources */,

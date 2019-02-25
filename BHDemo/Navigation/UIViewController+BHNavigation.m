@@ -7,7 +7,9 @@
 //
 
 #import "UIViewController+BHNavigation.h"
+#import "UIBarButtonItem+BHBlock.h"
 
+// Defaults
 #define BH_NAV_DEFAULT_COLOR [UIColor blackColor]
 #define BH_NAV_DEFAULT_FONT_SIZE 18.f
 
@@ -42,23 +44,25 @@
 #pragma mark - Navigation Item
 
 - (void)configureNavLeftItemTitle:(NSString *)title handler:(void(^)(void))handler {
-	UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(leftHandler:)];
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] bh_initWithTitle:title style:UIBarButtonItemStylePlain handler:handler];
 	self.navigationItem.leftBarButtonItem = item;
 }
 
 - (void)configureNavRightItemTitle:(NSString *)title handler:(void(^)(void))handler {
-	UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(rightHandler:)];
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] bh_initWithTitle:title style:UIBarButtonItemStylePlain handler:handler];
 	self.navigationItem.rightBarButtonItem = item;
 }
 
-#pragma mark - Private Methods
-
-- (void)leftHandler:(void(^)(void))handler {
-	handler();//https://www.jianshu.com/p/ba032dabcf4d
+- (void)configureNavLeftItemImage:(UIImage *)image handler:(void(^)(void))handler {
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] bh_initWithImage:image style:UIBarButtonItemStylePlain handler:handler];
+	[item setImage:[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+	self.navigationItem.leftBarButtonItem = item;
 }
 
-- (void)rightHandler:(void(^)(void))handler {
-	handler();
+- (void)configureNavRightItemImage:(UIImage *)image handler:(void(^)(void))handler {
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] bh_initWithImage:image style:UIBarButtonItemStylePlain handler:handler];
+	[item setImage:[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+	self.navigationItem.rightBarButtonItem = item;
 }
 
 @end

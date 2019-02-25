@@ -26,9 +26,18 @@
 	[super viewDidLoad];
 	[self configureNavBackgroundImage:[UIImage imageNamed:@"bh_navigation_bg"]];
 	
-	[self configureNavLeftItemTitle:@"Back" handler:^{
+//	[self configureNavLeftItemTitle:@"Back" handler:^{
+//		[self.navigationController popViewControllerAnimated:YES];
+//	}];
+
+	[self configureNavLeftItemImage:[UIImage imageNamed:@"bh_navigation_back_white"] handler:^{
 		[self.navigationController popViewControllerAnimated:YES];
 	}];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+	BHSecondViewController *secondViewController = [BHSecondViewController create];
+	[self.navigationController pushViewController:secondViewController animated:YES];
 }
 
 @end
