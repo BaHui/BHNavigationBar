@@ -2,7 +2,7 @@
 //  BHFirstViewController.m
 //  BHDemo
 //
-//  Created by QBH on 2019/2/16.
+//  Created by QBH on 2019/2/26.
 //  Copyright © 2019 QiaoBaHui. All rights reserved.
 //
 
@@ -28,7 +28,12 @@
 	[self popGestureRecognizerEnable];
 	
 	[self configureNavTitle:@"First View Controller" color:[UIColor brownColor]];
-	//[self configureNavBackgroundColor:[UIColor blackColor]];
+	[self configureNavBackgroundColor:[UIColor blackColor]];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	[self navigationBarShowHasAnimation:animated];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

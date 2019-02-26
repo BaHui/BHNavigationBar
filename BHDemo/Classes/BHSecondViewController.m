@@ -2,7 +2,7 @@
 //  BHSecondViewController.m
 //  BHDemo
 //
-//  Created by QBH on 2019/2/16.
+//  Created by QBH on 2019/2/26.
 //  Copyright © 2019 QiaoBaHui. All rights reserved.
 //
 
@@ -26,18 +26,18 @@
 	[super viewDidLoad];
 	[self configureNavBackgroundImage:[UIImage imageNamed:@"bh_navigation_bg"]];
 	
-//	[self configureNavLeftItemTitle:@"Back" handler:^{
+//	[self configureNavLeftItemTitle:@"Back" color:[UIColor brownColor] handler:^{
 //		[self.navigationController popViewControllerAnimated:YES];
 //	}];
-
+	
+	__weak typeof(self) weakSelf = self;
 	[self configureNavLeftItemImage:[UIImage imageNamed:@"bh_navigation_back_white"] handler:^{
-		[self.navigationController popViewControllerAnimated:YES];
+		[weakSelf.navigationController popViewControllerAnimated:YES];
 	}];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-	BHSecondViewController *secondViewController = [BHSecondViewController create];
-	[self.navigationController pushViewController:secondViewController animated:YES];
+- (void)dealloc {
+	NSLog(@"BHSecondViewController Dealloc !!!");
 }
 
 @end
